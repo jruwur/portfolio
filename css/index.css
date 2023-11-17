@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css?family=Signika+Negative:300,400&display=swap');
+/*
+body{
+     overflow-y: hidden ;
+}
+*/
+.background {
+        display: flex;
+        margin: 2px;
+        font-family: Arial, sans-serif;
+        background-color: #f5f5f5;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+       background-image: url("/img/text.jpg");
+       background-size: 100% 100%;
+       background-repeat: no-repeat;
+       text-shadow: 1px 1px 2px rgb(121, 117, 109);
+       color: #f5f5f5;
+       padding-left: 20px;
+    }
+
+    .container1 {
+        
+        text-align: center;
+        
+        background-size: 100% 100%;
+        padding: 50px;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        border-color: black;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    .container2 {
+        margin-top: 20px;
+        text-align: center;
+    
+        padding: 50px;
+        display: none;
+    }
+    .panel1{
+     
+        height: 700px;        
+        background-image: url("/img/11148.jpg");
+        background-size: cover;        
+        padding: 30px;
+        display: flex;
+        justify-content: center;
+    }
+    .panel2{
+     
+        height: 700px;        
+        background-image: url("/img/bihghhhhh.jpg");
+        background-size:cover;
+        position: relative;
+
+    }
+    .panel3{
+     
+        height: 700px;        
+        background-image: url("/img/dseguasd.jpg");
+        background-size: cover;
+        position: relative;
+
+    }
+
+    .imagenPrincipal{
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    .navigation{
+        height: 50px;
+        background-image: url("/img/navigation.jpg");
+        background-size: cover;
+        position: relative;
+        
+    }
+    .cta {
+        display: inline-block;
+        background-color: #274e78;
+        color: #fff;
+        padding: 10px 20px;
+        text-decoration: none;
+        border-radius: 5px;
+        margin-top: 20px;
+    }
+   
+    @media (min-width: 1024px) {
+        .container {
+            width: 50%;
+            margin: 0 auto;
+        }
+    
+        .container {
+            width: 50%;
+            margin: 0 auto;
+            display: none;
+        }
+    }
+
