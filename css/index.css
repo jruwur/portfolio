@@ -13,7 +13,7 @@ body{
         align-items: center;
         height: 100vh;
         margin: 0;
-       background-image: url("/img/text.jpg");
+       background-image: url("../img/text.jpg");
        background-size: 100% 100%;
        background-repeat: no-repeat;
        text-shadow: 1px 1px 2px rgb(121, 117, 109);
@@ -42,7 +42,7 @@ body{
     .panel1{
      
         height: 700px;        
-        background-image: url("/img/11148.jpg");
+        background-image: url("../img/11148.jpg");
         background-size: cover;        
         padding: 30px;
         display: flex;
@@ -51,7 +51,7 @@ body{
     .panel2{
      
         height: 700px;        
-        background-image: url("/img/bihghhhhh.jpg");
+        background-image: url("../img/bihghhhhh.jpg");
         background-size:cover;
         position: relative;
 
@@ -59,7 +59,7 @@ body{
     .panel3{
      
         height: 700px;        
-        background-image: url("/img/dseguasd.jpg");
+        background-image: url("../img/dseguasd.jpg");
         background-size: cover;
         position: relative;
 
@@ -74,7 +74,7 @@ body{
     }
     .navigation{
         height: 50px;
-        background-image: url("/img/navigation.jpg");
+        background-image: url("../img/navigation.jpg");
         background-size: cover;
         position: relative;
         
