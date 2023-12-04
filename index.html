@@ -11,18 +11,18 @@
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="manifest.json">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="icon" type="image/x-icon" href="/img/bongo-cat-transparent.gif">
+    <link rel="icon" type="image/x-icon" href="img/bongo-cat-transparent.gif">
    <!-- <script src="js/app.js"></script> -->
 </head>
 
 <body >
     <!-- Contenido de la página aquí -->
-    <div class="container-fluid navigation scroll" >
+    <div class="container-fluid navigation " >
 
       <div class="row">
 
           <div class="col-12 " style="display: flex; align-items: center; justify-content: center; margin: 5px;">
-                 <a class="btn btn-white" href="#Lenguajes"  style="margin-inline: 10px; color: aliceblue;">Habilidades</a>
+                 <a class="btn btn-white" href="#AboutMe"  style="margin-inline: 10px; color: aliceblue;">Sobre Mi</a>
                  <a class="btn btn-white" href="#proyectos"  style="margin-inline: 10px; color: aliceblue;">Proyectos</a>
                  <a class="btn btn-white" href="#contacto"  style="margin-inline: 10px; color: aliceblue;">Contacto</a>
     
@@ -30,7 +30,7 @@
       </div>
       
     </div>
-    <div class="container-fluid  background">
+    <div class="container-fluid background">
         <div class="row">
 
             <div class="container1">
@@ -39,7 +39,7 @@
                 <p>Me especializo en desarrollo web JS, bienvenido a mi portafolio!</p>
                 <a href="#" onclick="Next()" class="cta">Conocer más</a>
                <div class="imagenPrincipal mt-2">
-                    <img src="img/bongo-cat-transparent.gif" style="max-width: 200px;max-height: 200px;display: flex;" alt="">
+                    <img src="img/bongo-cat-transparent.gif"class="imgContent" alt="">
                 </div>
                 
                 
@@ -49,64 +49,93 @@
             <div class="container2 mt-2">
 
                     <h1>Hola bienvenido a este resumé/portafolio</h1>
+                    <h4>Mi nombre es José Inés Rodríguez	Cardiel, soy de Zacatecas, Mexico, y yo soy Ingeniero en INGENIERIA de DESARROLLO Y GESTION DE SOFTWARE (IDGS) </h4>
+                    <div class="imagenPrincipal mt-2">
+                      <img src="img/swipe.gif" class="imgContent" alt="">
+                      
+                    </div>
                     <p>En este documento podras conocerme un poco y ver algunas de mis habilidades como Desarrollador y ver algunos de mis proyectos
                     </p>  
-                    <div class="imagenPrincipal mt-2">
-                        <img src="img/swipe.gif" style="max-width: 200px;max-height: 200px;display: flex;" alt="">
-                        
-                    </div>
-                    <p>Mi nombre es José Inés Rodríguez	Cardiel, soy de Zacatecas, Mexico, y yo soy Ingeniero en INGENIERIA de DESARROLLO Y GESTION DE SOFTWARE (IDGS) </p>
                               </div>
         </div>
      
     </div>
-    <div class="container-fluid scroll" id="Lenguajes" >
+    <div class="container-fluid " id="AboutMe" >
         <div class="row">
             <div class="panel1 " >    
-                <div class="container-fluid" style="display: flex;  justify-content: center;">
-                    <div class="row">
-                        <div class="col-xl-12 col-lg-6 col-md-4">
-                            <H1 class="title" style="color: aliceblue; margin-top: 100px;">Habilidades</H1>
+                <div class="container-fluid">
+                    <H1 class="title">Sobre mi</H1>
+                    <div class="row" >
+                        <div class="col-md-4 col-sm-12 title">
+                          <h4>Historia Personal</h4>  
+                          <button id="visibilidad" onclick="verContenido()" class="btn btn-white" style="color: aliceblue;"> Ver</button>
+                          <div class="OcultarContenido"> 
+                            <p class="justify">Soy graduado con honores de la UNIVERSIDAD TECNOLÓGICA DEL NORTE DE AGUASCALIENTES (UTNA) como Tec. Superior Universitario en
+                              Tecnologías de la Información: Desarrollo de Software Multiplataforma.
+                            </p>
+                            <p class="justify">Y me encuentro cursando el último cuatrimestre de mi carrera en Ingenieria de Desarrollo y Gestión de Software</p>
+                             <img class="imgContent" style="margin-inline-start: 20%;" src="img/reconocimiento.jpeg"  alt="">
+                          </div>
                         </div>
-                    </div>
-                </div>            
-              
-            </div>
-        
-        </div>
-    </div>
-
-    <div class="container-fluid scroll" id="proyectos">
-        <div class="row">
-            <div class="panel2">
-                <div class="container-fluid" style="display: flex;  justify-content: center;">
-                    <div class="row">
-                        <div class="col-xl-12 col-lg-6 col-md-4">
-                            <H1 class="title2" style="color: aliceblue; margin-top: 100px;">Proyectos</H1>
+                        <div class="col-md-4 col-sm-12 title">
+                            <h4>Habilidades</h4>  
+                            <button id="boton2" onclick="verContenido2()" class="btn btn-white" style="color: aliceblue;"> Ver</button>
+                            <div class="OcultarContenido2"> 
+                          <h5 class="justify">Lenguajes de Programación</h5>
+                          <p class="justify">JavaScript - Cuento con bastante experiencia en este lenguaje, 
+                            he desarrollado la mayoria de proyectos web sobre este lenguaje</p>
+                          <p class="justify">Php - Cuento con buena experiencia. 
+                            He desarrollado proyectos muy completos utilizando este lenguaje</p>
+                          <p class="justify">C# - Cuento con buena experiencia, lo he utilizado en proyectos de Unity
+                             y para crear aplicaciones de escritorio </p>
+                          <p class="justify">Java - Cuento con buena experiencia, he realizado varios proyectos moviles utilizandolo, 
+                            y usandolo en el entorno de android</p>  
+                          </div>
                         </div>
-                    </div>
-                </div>    
-            </div>
-        </div>
-    </div>
-
-    <div class="container-fluid scroll" id="contacto"> 
-        <div class="row">
-            <div class="panel3">
-                <div class="container-fluid" style="display: flex;  justify-content: center;">
-                    <div class="row">
-                        <div class="col-xl-12 col-lg-6 col-md-4">
-                            <H1 class="title3" style="color: aliceblue; margin-top: 100px;">Contacto</H1>
+                        <div class="col-md-4 col-sm-12 title">
+                            <h4>Herramientas y Tecnologías</h4>  
+                            <button id="boton3" onclick="verContenido3()" class="btn btn-white" style="color: aliceblue;"> Ver</button>
+                            <div class="OcultarContenido3">
+                          <h5 class="justify">DevOps</h5>
+                          <p class="justify">Jira Software - He utilizado jira tanto para seguir una metodología ágil así como para
+                            el despliegue del software
+                          </p>
+                          <p class="justify">GitHub - Suelo utilizar mucho los repositorios de github</p>
+                          <p class="justify">Jenkins - He utilizado Jenkins para la entrega continua y la automatización de pruebas,
+                            junto con selenium, pero no agregue selenium porque tengo menos practica en él.
+                          </p>
+                          <p class="justify">Docker - He utilizado este virtualizador para facilitar el despliegue de software basto</p>      
+                            
                         </div>
+                     
+                        </div>
+                        <div class="col-md-4 col-sm-12 title mt-3">
+                          <h4>Frameworks y Librerias</h4>  
+                          <button id="boton4" onclick="verContenido4()" class="btn btn-white" style="color: aliceblue;"> Ver</button>
+                          <div class="OcultarContenido4">
+                        <h5 class="justify">Frameworks y plataformas Js</h5>
+                        <p class="justify">Angular - He utilizado este framework varias veces y me gusta mucho pero lo he estado dejando de utilizar</p>
+                        <p class="justify">Node - He utilizado bastante esta plataforma para el uso de más frameworks y paqueterias como express.js, nest.js
+                        </p>
+                        <p class="justify">cordova - He desarrollado varias aplicaciones Multiplataforma con esta plataforma y recientemente he utilizado sus más famosos plugins</p>      
+                        <p class="justify">jQuery - He utilizado bastante esta libreria de js.
+                        </p>
+                        <p class="justify">GSAP - Esta libreria de animación desde que la conocí hace no mucho me gusto bastante,
+                          cabe mencionar que todas las animaciones de ésta página estan programadas usando GSAP
+                        </p>
+                      </div>
+                   
+                      </div>
                     </div>
-                </div>    
-            </div>
+                </div>                          
+            </div>    
         </div>
     </div>
 
     
     
 </body>
+<script src="js/ocultarcontent.js"></script>
 <script src="js/index.js">
 </script>
 </html>
