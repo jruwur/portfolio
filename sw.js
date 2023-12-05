@@ -1,12 +1,29 @@
-const nombreCache = "PORTFOLIO_PWA2";
+const nombreCache = "PORTFOLIO_PWA3";
 const archivosCache = [
     "/",
     "index.html",
-    "img",
+    "pages/contacto.html",
+    "pages/proyectos.html",
+    "img/back.jpg",
+    "img/bihghhhhh.jpg",
+    "img/bongo-cat-transparent.gif",
+    "img/bongoGIF.gif",
+    "img/drivelogo.png",
+    "img/dseguasd.jpg",
+    "img/gitlogo.png",
+    "img/home.png",
+    "img/navigation.jpg",
+    "img/reconocimiento.jpeg",
+    "img/stars.jpg",
+    "img/text.jpg",
+    "img/stars.jpg",
+    "img/swipe.gif",
     "css/index.css",
+    "img/yo.jpeg",
     "js/app.js",
     "js/index.js",
-    "js/ocultarcontent.js"
+    "js/ocultarcontent.js",
+    "js/proyectos.js"
 ];
 
 self.addEventListener('install', e => {
