@@ -5,8 +5,8 @@
     "description":"This portfolio was created with gsap animations and pwa based proyect",
     "display":"standalone",
     "orientation":"portrait",
-    "background_color":"#fff",
-    "theme_color":"#fff",
+    "background_color":"#000000",
+    "theme_color":"#000000",
     "icons": [
         {
             "src": "img/android/72.png",

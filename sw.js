@@ -2,6 +2,7 @@ const nombreCache = "PORTFOLIO_PWA2";
 const archivosCache = [
     "/",
     "index.html",
+    "img",
     "css/index.css",
     "js/app.js",
     "js/index.js",
@@ -31,9 +32,22 @@ self.addEventListener('install', e => {
     );
 });
 
-self.addEventListener('activate', e => {
-    console.log("El Service Worker está activo y listo para controlar las páginas", e);
+self.addEventListener('activate', event => {
+    event.waitUntil(
+        caches.keys().then(cacheNames => {
+            return Promise.all(
+                cacheNames.filter(cacheName => {
+                    // Filtrar cachés antiguas
+                    return cacheName.startsWith('PORTFOLIO_PWA') && cacheName !== nombreCache;
+                }).map(cacheName => {
+                    // Eliminar cachés antiguas
+                    return caches.delete(cacheName);
+                })
+            );
+        })
+    );
 });
+
 
 self.addEventListener("fetch", e => {
     console.log("Se realizó una petición: ", e);
